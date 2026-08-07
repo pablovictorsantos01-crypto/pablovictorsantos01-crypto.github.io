@@ -465,62 +465,6 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="lg:col-span-6">
-              <div className="bg-slate-950 border border-slate-800 rounded-2xl p-6 sm:p-8 shadow-2xl">
-                <h3 className="text-xl font-bold text-white mb-6">Envie sua Mensagem</h3>
-                
-                {submitted ? (
-                  <div className="bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 p-6 rounded-xl text-center space-y-2">
-                    <CheckCircle2 className="w-10 h-10 mx-auto text-emerald-400" />
-                    <div className="font-bold text-lg">Mensagem enviada com sucesso!</div>
-                    <p className="text-sm text-emerald-300/80">Obrigado pelo contato. Retornarei em breve.</p>
-                  </div>
-                ) : (
-                  <form onSubmit={handleSubmit} className="space-y-4">
-                    <div>
-                      <label className="block text-xs font-semibold text-slate-400 uppercase mb-2">Seu Nome</label>
-                      <input 
-                        type="text" 
-                        required
-                        value={formData.name}
-                        onChange={(e) => setFormData({...formData, name: e.target.value})}
-                        className="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition-colors"
-                        placeholder="Ex: JoÃ£o Silva"
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-xs font-semibold text-slate-400 uppercase mb-2">Seu E-mail</label>
-                      <input 
-                        type="email" 
-                        required
-                        value={formData.email}
-                        onChange={(e) => setFormData({...formData, email: e.target.value})}
-                        className="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition-colors"
-                        placeholder="Ex: joao@empresa.com"
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-xs font-semibold text-slate-400 uppercase mb-2">Mensagem</label>
-                      <textarea 
-                        rows={4}
-                        required
-                        value={formData.message}
-                        onChange={(e) => setFormData({...formData, message: e.target.value})}
-                        className="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition-colors resize-none"
-                        placeholder="Escreva sua mensagem ou proposta..."
-                      />
-                    </div>
-                    <button 
-                      type="submit"
-                      className="w-full py-3.5 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold transition-all flex items-center justify-center space-x-2 shadow-lg shadow-cyan-500/20"
-                    >
-                      <Send className="w-4 h-4" />
-                      <span>Enviar Mensagem</span>
-                    </button>
-                  </form>
-                )}
-              </div>
-            </div>
 
           </div>
 
