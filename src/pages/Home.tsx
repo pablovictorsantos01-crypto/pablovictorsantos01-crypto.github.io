@@ -1,5 +1,4 @@
-﻿import React, { useState } from 'react';
-import { 
+﻿import { 
   ShieldCheck, 
   Server, 
   Cloud, 
@@ -12,24 +11,10 @@ import {
   MapPin, 
   CheckCircle2, 
   Code2,
-  ChevronRight,
-  Send
+  ChevronRight
 } from 'lucide-react';
 
 export default function Home() {
-  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (formData.name && formData.email) {
-      setSubmitted(true);
-      setTimeout(() => {
-        setSubmitted(false);
-        setFormData({ name: '', email: '', message: '' });
-      }, 4000);
-    }
-  };
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 font-sans selection:bg-cyan-500 selection:text-slate-950">
@@ -477,6 +462,8 @@ export default function Home() {
     </div>
   );
 }
+
+
 
 
 
