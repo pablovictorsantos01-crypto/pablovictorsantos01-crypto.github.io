@@ -149,7 +149,15 @@ export default function Home() {
       </section>
 
       {/* EXPERIÊNCIA PROFISSIONAL */}
-      <section id="experiencia" className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section
+        id="experiencia"
+        className="hex-section relative py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+        onMouseMove={(e) => {
+          const rect = e.currentTarget.getBoundingClientRect();
+          e.currentTarget.style.setProperty('--mx', `${e.clientX - rect.left}px`);
+          e.currentTarget.style.setProperty('--my', `${e.clientY - rect.top}px`);
+        }}
+      >
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Experiência Profissional</h2>
           <p className="text-slate-400">Trajetória prática em administração de ambientes corporativos, segurança e suporte técnico.</p>
@@ -263,7 +271,15 @@ export default function Home() {
       </section>
 
       {/* REALIZAÇÕES & DESTAQUES */}
-      <section id="realizacoes" className="py-24 bg-slate-900/50 border-y border-slate-800">
+      <section
+        id="realizacoes"
+        className="hex-section relative py-24 bg-slate-900/50 border-y border-slate-800"
+        onMouseMove={(e) => {
+          const rect = e.currentTarget.getBoundingClientRect();
+          e.currentTarget.style.setProperty('--mx', `${e.clientX - rect.left}px`);
+          e.currentTarget.style.setProperty('--my', `${e.clientY - rect.top}px`);
+        }}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Principais Realizações</h2>
@@ -317,7 +333,15 @@ export default function Home() {
       </section>
 
       {/* COMPETÊNCIAS & HABILIDADES */}
-      <section id="competencias" className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section
+        id="competencias"
+        className="hex-section relative py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+        onMouseMove={(e) => {
+          const rect = e.currentTarget.getBoundingClientRect();
+          e.currentTarget.style.setProperty('--mx', `${e.clientX - rect.left}px`);
+          e.currentTarget.style.setProperty('--my', `${e.clientY - rect.top}px`);
+        }}
+      >
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Competências Técnicas</h2>
           <p className="text-slate-400">Stack tecnológica e domínios de especialização.</p>
