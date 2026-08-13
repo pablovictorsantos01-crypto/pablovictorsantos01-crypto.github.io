@@ -1,1 +1,123 @@
 @import "tailwindcss";
+
+/* Scroll suave entre seções */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fluidez geral: transições suaves em qualquer elemento interativo */
+a,
+button,
+input,
+textarea {
+  transition: all 0.25s ease;
+}
+
+/* Efeito de brilho colorido ao redor dos cards ao passar o mouse */
+.glow-card {
+  position: relative;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.glow-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(34, 211, 238, 0.5);
+  box-shadow:
+    0 0 0 1px rgba(34, 211, 238, 0.25),
+    0 8px 30px -8px rgba(34, 211, 238, 0.35),
+    0 0 40px -10px rgba(34, 211, 238, 0.25);
+}
+
+/* Variante do glow em tom azul, usado em alguns cards */
+.glow-card-blue:hover {
+  border-color: rgba(96, 165, 250, 0.5);
+  box-shadow:
+    0 0 0 1px rgba(96, 165, 250, 0.25),
+    0 8px 30px -8px rgba(96, 165, 250, 0.35),
+    0 0 40px -10px rgba(96, 165, 250, 0.25);
+}
+
+/* Variante do glow em tom roxo */
+.glow-card-purple:hover {
+  border-color: rgba(192, 132, 252, 0.5);
+  box-shadow:
+    0 0 0 1px rgba(192, 132, 252, 0.25),
+    0 8px 30px -8px rgba(192, 132, 252, 0.35),
+    0 0 40px -10px rgba(192, 132, 252, 0.25);
+}
+
+/* Variante do glow em tom esmeralda */
+.glow-card-emerald:hover {
+  border-color: rgba(52, 211, 153, 0.5);
+  box-shadow:
+    0 0 0 1px rgba(52, 211, 153, 0.25),
+    0 8px 30px -8px rgba(52, 211, 153, 0.35),
+    0 0 40px -10px rgba(52, 211, 153, 0.25);
+}
+
+/* Links de navegação com sublinhado animado */
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #22d3ee, #3b82f6);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Botões com leve elevação e brilho ao passar o mouse */
+.btn-glow {
+  transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+}
+
+.btn-glow:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.08);
+  box-shadow: 0 8px 25px -6px rgba(34, 211, 238, 0.5);
+}
+
+/* Tags/badges de competências: leve destaque ao passar o mouse */
+.skill-tag {
+  transition: all 0.25s ease;
+}
+
+.skill-tag:hover {
+  border-color: rgba(34, 211, 238, 0.6);
+  color: #ffffff;
+  background-color: rgba(34, 211, 238, 0.08);
+  transform: translateY(-1px);
+}
+
+/* Fluidez: suaviza renderização de fontes e evita "pulos" de layout */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar mais suave e discreta */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}

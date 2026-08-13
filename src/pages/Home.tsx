@@ -32,17 +32,17 @@ export default function Home() {
           </div>
           
           <nav className="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
-            <a href="#sobre" className="hover:text-cyan-400 transition-colors">Sobre</a>
-            <a href="#experiencia" className="hover:text-cyan-400 transition-colors">Experiência</a>
-            <a href="#realizacoes" className="hover:text-cyan-400 transition-colors">Realizações</a>
-            <a href="#competencias" className="hover:text-cyan-400 transition-colors">Competências</a>
-            <a href="#contato" className="hover:text-cyan-400 transition-colors">Contato</a>
+            <a href="#sobre" className="nav-link hover:text-cyan-400 transition-colors">Sobre</a>
+            <a href="#experiencia" className="nav-link hover:text-cyan-400 transition-colors">Experiência</a>
+            <a href="#realizacoes" className="nav-link hover:text-cyan-400 transition-colors">Realizações</a>
+            <a href="#competencias" className="nav-link hover:text-cyan-400 transition-colors">Competências</a>
+            <a href="#contato" className="nav-link hover:text-cyan-400 transition-colors">Contato</a>
           </nav>
 
           <div className="flex items-center space-x-3">
             <a 
               href="#contato" 
-              className="hidden sm:inline-flex items-center justify-center px-4 py-2 rounded-lg bg-cyan-500 text-slate-950 font-semibold text-sm hover:bg-cyan-400 transition-all shadow-md shadow-cyan-500/20"
+              className="btn-glow hidden sm:inline-flex items-center justify-center px-4 py-2 rounded-lg bg-cyan-500 text-slate-950 font-semibold text-sm hover:bg-cyan-400 transition-all shadow-md shadow-cyan-500/20"
             >
               Falar Comigo
             </a>
@@ -73,14 +73,14 @@ export default function Home() {
               <div className="flex flex-wrap gap-4 pt-4">
                 <a 
                   href="#experiencia" 
-                  className="px-6 py-3 rounded-xl bg-cyan-500 text-slate-950 font-bold hover:bg-cyan-400 transition-all flex items-center space-x-2 shadow-lg shadow-cyan-500/25"
+                  className="btn-glow px-6 py-3 rounded-xl bg-cyan-500 text-slate-950 font-bold hover:bg-cyan-400 transition-all flex items-center space-x-2 shadow-lg shadow-cyan-500/25"
                 >
                   <span>Ver Experiência</span>
                   <ChevronRight className="w-4 h-4" />
                 </a>
                 <a 
                   href="#contato" 
-                  className="px-6 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-semibold transition-all border border-slate-700 flex items-center space-x-2"
+                  className="btn-glow px-6 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-semibold transition-all border border-slate-700 flex items-center space-x-2"
                 >
                   <Mail className="w-4 h-4 text-cyan-400" />
                   <span>Contato Direto</span>
@@ -115,19 +115,19 @@ export default function Home() {
                 </h3>
 
                 <div className="space-y-6">
-                  <div className="p-4 rounded-xl bg-slate-950/60 border border-slate-800/80">
+                  <div className="glow-card p-4 rounded-xl bg-slate-950/60 border border-slate-800/80">
                     <div className="text-3xl font-black text-cyan-400 mb-1">-60%</div>
                     <div className="text-sm font-medium text-slate-200">Redução no Tempo de Onboarding</div>
                     <p className="text-xs text-slate-400 mt-1">Migração do Zoho para o ecossistema Microsoft 365 e Intune para 70 usuários.</p>
                   </div>
 
-                  <div className="p-4 rounded-xl bg-slate-950/60 border border-slate-800/80">
+                  <div className="glow-card p-4 rounded-xl bg-slate-950/60 border border-slate-800/80">
                     <div className="text-3xl font-black text-blue-400 mb-1">+40%</div>
                     <div className="text-sm font-medium text-slate-200">Performance de Storage</div>
                     <p className="text-xs text-slate-400 mt-1">Migração estruturada de storage para TrueNAS com alta disponibilidade.</p>
                   </div>
 
-                  <div className="p-4 rounded-xl bg-slate-950/60 border border-slate-800/80">
+                  <div className="glow-card p-4 rounded-xl bg-slate-950/60 border border-slate-800/80">
                     <div className="text-3xl font-black text-emerald-400 mb-1">99,5%</div>
                     <div className="text-sm font-medium text-slate-200">Uptime & Zero Incidentes</div>
                     <p className="text-xs text-slate-400 mt-1">Implantação de CrowdStrike Falcon (EDR) e políticas Zero Trust.</p>
@@ -150,7 +150,7 @@ export default function Home() {
 
         <div className="space-y-8 max-w-4xl mx-auto">
           
-          <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 relative shadow-xl">
+          <div className="glow-card bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 relative shadow-xl">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-6 pb-6 border-b border-slate-800">
               <div>
                 <span className="text-xs font-semibold px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">
@@ -192,7 +192,7 @@ export default function Home() {
             </ul>
           </div>
 
-          <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 relative shadow-xl">
+          <div className="glow-card bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 relative shadow-xl">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-6 pb-6 border-b border-slate-800">
               <div>
                 <span className="text-xs font-semibold px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20">
@@ -222,7 +222,7 @@ export default function Home() {
             </ul>
           </div>
 
-          <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 relative shadow-xl">
+          <div className="glow-card bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 relative shadow-xl">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-6 pb-6 border-b border-slate-800">
               <div>
                 <span className="text-xs font-semibold px-3 py-1 rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20">
@@ -265,7 +265,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             
-            <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 hover:border-cyan-500/50 transition-all">
+            <div className="glow-card bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 hover:border-cyan-500/50 transition-all">
               <div className="w-12 h-12 rounded-xl bg-cyan-500/10 flex items-center justify-center text-cyan-400 mb-6 font-bold text-xl">
                 01
               </div>
@@ -275,7 +275,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 hover:border-blue-500/50 transition-all">
+            <div className="glow-card glow-card-blue bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 hover:border-blue-500/50 transition-all">
               <div className="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-400 mb-6 font-bold text-xl">
                 02
               </div>
@@ -285,7 +285,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 hover:border-purple-500/50 transition-all">
+            <div className="glow-card glow-card-purple bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 hover:border-purple-500/50 transition-all">
               <div className="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-400 mb-6 font-bold text-xl">
                 03
               </div>
@@ -295,7 +295,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 hover:border-emerald-500/50 transition-all">
+            <div className="glow-card glow-card-emerald bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 hover:border-emerald-500/50 transition-all">
               <div className="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 mb-6 font-bold text-xl">
                 04
               </div>
@@ -318,61 +318,61 @@ export default function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           
-          <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+          <div className="glow-card bg-slate-900 border border-slate-800 rounded-2xl p-6">
             <div className="flex items-center space-x-3 mb-4">
               <Cloud className="w-6 h-6 text-cyan-400" />
               <h3 className="text-lg font-bold text-white">Cloud & DevOps</h3>
             </div>
             <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1 rounded-lg bg-slate-950 text-slate-300 text-xs border border-slate-800">AWS (Fundamentos)</span>
-              <span className="px-3 py-1 rounded-lg bg-slate-950 text-slate-300 text-xs border border-slate-800">Docker</span>
-              <span className="px-3 py-1 rounded-lg bg-slate-950 text-slate-300 text-xs border border-slate-800">Redes de Computadores</span>
-              <span className="px-3 py-1 rounded-lg bg-slate-950 text-slate-300 text-xs border border-slate-800">DevOps Concepts</span>
+              <span className="skill-tag px-3 py-1 rounded-lg bg-slate-950 text-slate-300 text-xs border border-slate-800">AWS (Fundamentos)</span>
+              <span className="skill-tag px-3 py-1 rounded-lg bg-slate-950 text-slate-300 text-xs border border-slate-800">Docker</span>
+              <span className="skill-tag px-3 py-1 rounded-lg bg-slate-950 text-slate-300 text-xs border border-slate-800">Redes de Computadores</span>
+              <span className="skill-tag px-3 py-1 rounded-lg bg-slate-950 text-slate-300 text-xs border border-slate-800">DevOps Concepts</span>
             </div>
           </div>
 
-          <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+          <div className="glow-card bg-slate-900 border border-slate-800 rounded-2xl p-6">
             <div className="flex items-center space-x-3 mb-4">
               <Lock className="w-6 h-6 text-emerald-400" />
               <h3 className="text-lg font-bold text-white">Segurança & Identidade</h3>
             </div>
             <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1 rounded-lg bg-slate-950 text-slate-300 text-xs border border-slate-800">Microsoft Entra ID</span>
-              <span className="px-3 py-1 rounded-lg bg-slate-950 text-slate-300 text-xs border border-slate-800">CrowdStrike Falcon</span>
-              <span className="px-3 py-1 rounded-lg bg-slate-950 text-slate-300 text-xs border border-slate-800">Conditional Access</span>
-              <span className="px-3 py-1 rounded-lg bg-slate-950 text-slate-300 text-xs border border-slate-800">Zero Trust</span>
-              <span className="px-3 py-1 rounded-lg bg-slate-950 text-slate-300 text-xs border border-slate-800">MFA / RBAC</span>
+              <span className="skill-tag px-3 py-1 rounded-lg bg-slate-950 text-slate-300 text-xs border border-slate-800">Microsoft Entra ID</span>
+              <span className="skill-tag px-3 py-1 rounded-lg bg-slate-950 text-slate-300 text-xs border border-slate-800">CrowdStrike Falcon</span>
+              <span className="skill-tag px-3 py-1 rounded-lg bg-slate-950 text-slate-300 text-xs border border-slate-800">Conditional Access</span>
+              <span className="skill-tag px-3 py-1 rounded-lg bg-slate-950 text-slate-300 text-xs border border-slate-800">Zero Trust</span>
+              <span className="skill-tag px-3 py-1 rounded-lg bg-slate-950 text-slate-300 text-xs border border-slate-800">MFA / RBAC</span>
             </div>
           </div>
 
-          <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+          <div className="glow-card bg-slate-900 border border-slate-800 rounded-2xl p-6">
             <div className="flex items-center space-x-3 mb-4">
               <Server className="w-6 h-6 text-blue-400" />
               <h3 className="text-lg font-bold text-white">Infraestrutura & MDM</h3>
             </div>
             <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1 rounded-lg bg-slate-950 text-slate-300 text-xs border border-slate-800">Microsoft Intune</span>
-              <span className="px-3 py-1 rounded-lg bg-slate-950 text-slate-300 text-xs border border-slate-800">Hexnode MDM</span>
-              <span className="px-3 py-1 rounded-lg bg-slate-950 text-slate-300 text-xs border border-slate-800">Windows Server</span>
-              <span className="px-3 py-1 rounded-lg bg-slate-950 text-slate-300 text-xs border border-slate-800">Linux / Unix</span>
-              <span className="px-3 py-1 rounded-lg bg-slate-950 text-slate-300 text-xs border border-slate-800">TrueNAS</span>
+              <span className="skill-tag px-3 py-1 rounded-lg bg-slate-950 text-slate-300 text-xs border border-slate-800">Microsoft Intune</span>
+              <span className="skill-tag px-3 py-1 rounded-lg bg-slate-950 text-slate-300 text-xs border border-slate-800">Hexnode MDM</span>
+              <span className="skill-tag px-3 py-1 rounded-lg bg-slate-950 text-slate-300 text-xs border border-slate-800">Windows Server</span>
+              <span className="skill-tag px-3 py-1 rounded-lg bg-slate-950 text-slate-300 text-xs border border-slate-800">Linux / Unix</span>
+              <span className="skill-tag px-3 py-1 rounded-lg bg-slate-950 text-slate-300 text-xs border border-slate-800">TrueNAS</span>
             </div>
           </div>
 
-          <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+          <div className="glow-card bg-slate-900 border border-slate-800 rounded-2xl p-6">
             <div className="flex items-center space-x-3 mb-4">
               <Code2 className="w-6 h-6 text-purple-400" />
               <h3 className="text-lg font-bold text-white">Desenvolvimento</h3>
             </div>
             <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1 rounded-lg bg-slate-950 text-slate-300 text-xs border border-slate-800">JavaScript (ES6+)</span>
-              <span className="px-3 py-1 rounded-lg bg-slate-950 text-slate-300 text-xs border border-slate-800">HTML5 / CSS3</span>
-              <span className="px-3 py-1 rounded-lg bg-slate-950 text-slate-300 text-xs border border-slate-800">REST APIs</span>
-              <span className="px-3 py-1 rounded-lg bg-slate-950 text-slate-300 text-xs border border-slate-800">Git / GitHub</span>
+              <span className="skill-tag px-3 py-1 rounded-lg bg-slate-950 text-slate-300 text-xs border border-slate-800">JavaScript (ES6+)</span>
+              <span className="skill-tag px-3 py-1 rounded-lg bg-slate-950 text-slate-300 text-xs border border-slate-800">HTML5 / CSS3</span>
+              <span className="skill-tag px-3 py-1 rounded-lg bg-slate-950 text-slate-300 text-xs border border-slate-800">REST APIs</span>
+              <span className="skill-tag px-3 py-1 rounded-lg bg-slate-950 text-slate-300 text-xs border border-slate-800">Git / GitHub</span>
             </div>
           </div>
 
-          <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+          <div className="glow-card bg-slate-900 border border-slate-800 rounded-2xl p-6">
             <div className="flex items-center space-x-3 mb-4">
               <GraduationCap className="w-6 h-6 text-amber-400" />
               <h3 className="text-lg font-bold text-white">Formação Acadêmica</h3>
@@ -389,16 +389,16 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+          <div className="glow-card bg-slate-900 border border-slate-800 rounded-2xl p-6">
             <div className="flex items-center space-x-3 mb-4">
               <Terminal className="w-6 h-6 text-rose-400" />
               <h3 className="text-lg font-bold text-white">Ferramentas & Admin</h3>
             </div>
             <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1 rounded-lg bg-slate-950 text-slate-300 text-xs border border-slate-800">PowerShell</span>
-              <span className="px-3 py-1 rounded-lg bg-slate-950 text-slate-300 text-xs border border-slate-800">Azure Portal</span>
-              <span className="px-3 py-1 rounded-lg bg-slate-950 text-slate-300 text-xs border border-slate-800">Microsoft 365</span>
-              <span className="px-3 py-1 rounded-lg bg-slate-950 text-slate-300 text-xs border border-slate-800">Hyper-V</span>
+              <span className="skill-tag px-3 py-1 rounded-lg bg-slate-950 text-slate-300 text-xs border border-slate-800">PowerShell</span>
+              <span className="skill-tag px-3 py-1 rounded-lg bg-slate-950 text-slate-300 text-xs border border-slate-800">Azure Portal</span>
+              <span className="skill-tag px-3 py-1 rounded-lg bg-slate-950 text-slate-300 text-xs border border-slate-800">Microsoft 365</span>
+              <span className="skill-tag px-3 py-1 rounded-lg bg-slate-950 text-slate-300 text-xs border border-slate-800">Hyper-V</span>
             </div>
           </div>
 
