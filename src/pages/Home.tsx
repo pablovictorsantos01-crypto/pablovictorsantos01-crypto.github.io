@@ -51,7 +51,14 @@ export default function Home() {
       </header>
 
       {/* HERO SECTION */}
-      <section className="relative overflow-hidden py-24 lg:py-32 border-b border-slate-800/80 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
+      <section
+        className="hex-section relative overflow-hidden py-24 lg:py-32 border-b border-slate-800/80 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950"
+        onMouseMove={(e) => {
+          const rect = e.currentTarget.getBoundingClientRect();
+          e.currentTarget.style.setProperty('--mx', `${e.clientX - rect.left}px`);
+          e.currentTarget.style.setProperty('--my', `${e.clientY - rect.top}px`);
+        }}
+      >
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-cyan-900/20 via-slate-950/0 to-slate-950/0 pointer-events-none" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -406,8 +413,16 @@ export default function Home() {
       </section>
 
       {/* CONTATO & RODAPÉ */}
-      <section id="contato" className="py-24 bg-slate-900 border-t border-slate-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section
+        id="contato"
+        className="hex-section relative py-24 bg-slate-900 border-t border-slate-800"
+        onMouseMove={(e) => {
+          const rect = e.currentTarget.getBoundingClientRect();
+          e.currentTarget.style.setProperty('--mx', `${e.clientX - rect.left}px`);
+          e.currentTarget.style.setProperty('--my', `${e.clientY - rect.top}px`);
+        }}
+      >
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
             
             <div className="space-y-6">
